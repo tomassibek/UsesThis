@@ -1,5 +1,5 @@
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; AutohotKey – the ultimate automation scripting language for {WIN}dows.
+; AutohotKey – the ultimate automation scripting language for Windows.
 ; https://autohotkey.com/docs/Tutorial.htm
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; UsesThis.ahk – personal AutohotKey sript
@@ -47,7 +47,7 @@
 ; online apps
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {WIN}+w / WhatsApp
-#w::Run % "C:\Users\" . A_UserName . "\Desktop\WhatsApp.lnk", , max
+#w::Run G:\Mùj disk\ZÁSTUPCE\WhatsApp.lnk, , max
 ; {WIN}+y / YouTube Music
 #y::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
 ; {WIN}+s / Spotify
@@ -56,7 +56,7 @@
 #b::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bandcamp.com/djdrobek/wishlist", , max
 ; {ALT}+1 / Raindrop
 !Numpad1::
-Run % "C:\Users\" . A_UserName . "\Desktop\Raindrop.io.lnk", , max
+Run G:\Mùj disk\ZÁSTUPCE\Raindrop.io.lnk, , max
 Return
 ; {ALT}+2 / Calendar
 !Numpad2::
