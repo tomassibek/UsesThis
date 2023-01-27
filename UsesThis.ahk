@@ -26,7 +26,7 @@
 #ø::Run C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE, , max
 ; {WIN}+6(ž) / VLC media player
 #ž::Run C:\Program Files\VideoLAN\VLC\vlc.exe, , max
-; {WIN}+7(ý) / IrfanView
+; {WIN}+7(ý) / IrfanView – https://www.irfanview.com
 #ý::Run C:\Program Files\IrfanView\i_view64.exe, , max
 ; {WIN}+8(á) / PDF-XChange Viewer
 #á::Run C:\Program Files\Tracker Software\PDF Viewer\PDFXCview.exe, , max
@@ -48,8 +48,6 @@
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {WIN}+w / WhatsApp
 #w::Run G:\Mùj disk\ZÁSTUPCE\WhatsApp.lnk, , max
-; {WIN}+y / YouTube Music
-#y::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
 ; {WIN}+s / Spotify
 #s::Run % "C:\Users\" . A_UserName . "\AppData\Roaming\Spotify\Spotify.exe", , max
 ; {WIN}+b / Bandcamp
@@ -68,7 +66,15 @@ Run % "C:\Users\" . A_UserName . "\AppData\Local\Programs\todoist\Todoist.exe", 
 Return
 ; {ALT}+4 / Gmail
 !Numpad4::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/mail", , max
+giReturn
+; {ALT}+5 / YouTube Music
+!Numpad5::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
+Return
+; {ALT}+6 / Podcasty
+!Numpad6::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://podcasts.google.com", , max
+Return
+; {ALT}+7 / Feedly
+!Numpad7::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://feedly.com", , max
 Return
 ; {ALT}+- / close Chrome
 !NumpadSub::
@@ -105,6 +111,13 @@ Return
 ; HOTKEYS V.
 ; Gmail shortcuts
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; {WIN}+t / TODAY
+#t::
+send, /
+sleep 1000
+send, label:dnes
+send, {ENTER}
+Return
 ; {WIN}+k / WORK – todo
 #k::
 send, /
@@ -139,7 +152,7 @@ send, /
 sleep 1000
 send, label:trsh NOT label:@magda is:unread 
 send, {ENTER}
-sleep 1000
+sleep 2000
 send, {*}{a}
 sleep 1000
 Send +i
@@ -174,7 +187,10 @@ Return
 ::uvz::„“ 
 ::pml::–
 ::mzr::&nbsp;
+::mlt::tomas.sibek+test@gmail.com
 ::qdd::
 FormatTime, CurrentDateTime,, yyddMM
 SendInput %CurrentDateTime%
 return
+;
+;
