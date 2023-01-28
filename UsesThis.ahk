@@ -66,7 +66,7 @@ Run % "C:\Users\" . A_UserName . "\AppData\Local\Programs\todoist\Todoist.exe", 
 Return
 ; {ALT}+4 / Gmail
 !Numpad4::
-giReturn
+Return
 ; {ALT}+5 / YouTube Music
 !Numpad5::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
 Return
