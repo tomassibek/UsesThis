@@ -46,15 +46,9 @@
 ; HOTKEYS II.
 ; online apps
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {WIN}+w / WhatsApp
-#w::Run G:\Mùj disk\ZÁSTUPCE\WhatsApp.lnk, , max
-; {WIN}+s / Spotify
-#s::Run % "C:\Users\" . A_UserName . "\AppData\Roaming\Spotify\Spotify.exe", , max
-; {WIN}+b / Bandcamp
-#b::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bandcamp.com/djdrobek/wishlist", , max
 ; {ALT}+1 / Raindrop
 !Numpad1::
-Run G:\Mùj disk\ZÁSTUPCE\Raindrop.io.lnk, , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://app.raindrop.io/", , max
 Return
 ; {ALT}+2 / Calendar
 !Numpad2::
@@ -62,19 +56,23 @@ Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrom
 Return
 ; {ALT}+3 / Todoist
 !Numpad3::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Programs\todoist\Todoist.exe", , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://todoist.com/app/", , max
 Return
 ; {ALT}+4 / Gmail
 !Numpad4::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/", , max
 Return
-; {ALT}+5 / YouTube Music
-!Numpad5::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
+; {ALT}+5 / Feedly
+!Numpad5::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://feedly.com", , max
 Return
-; {ALT}+6 / Podcasty
-!Numpad6::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://podcasts.google.com", , max
+; {ALT}+6 / YouTube Music
+!Numpad6::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
 Return
-; {ALT}+7 / Feedly
-!Numpad7::Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://feedly.com", , max
+; {ALT}+7 / Google Podcasts
+!Numpad7::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://podcasts.google.com/queue?hl=cs", , max
 Return
 ; {ALT}+- / close Chrome
 !NumpadSub::
@@ -83,6 +81,8 @@ WinGet, chromewindows, List, ahk_exe chrome.exe
 Loop, % chromewindows
 winClose, % "ahk_id " chromewindows%A_Index%
 Return
+; {WIN}+w / WhatsApp
+#w::Run G:\Mùj disk\ZÁSTUPCE\WhatsApp.lnk, , max
 ;
 ;
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -187,7 +187,7 @@ Return
 ::uvz::„“ 
 ::pml::–
 ::mzr::&nbsp;
-::mlt::tomas.sibek+test@gmail.com
+::mlt::tomas.sibek{+}test@gmail.com
 ::qdd::
 FormatTime, CurrentDateTime,, yyddMM
 SendInput %CurrentDateTime%
