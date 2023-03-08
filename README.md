@@ -3,7 +3,7 @@ Personal Autohotkey script and working notes for inspiration. / Osobní Autohotk
 
 ## Articles about Autohotkey
 
-[Odkaz](https://web.archive.org/web/20220706094858/https://zenhabits.net/edit-your-life-part-4-your-work-space/)
+Leo Babauta: [Edit Your Life, Part 4: Your Work Space](https://web.archive.org/web/20220706094858/https://zenhabits.net/edit-your-life-part-4-your-work-space/)
 
 [Odkaz](https://web.archive.org/web/20220821213632/https://www.wikihow.com/Use-AutoHotkey)
 

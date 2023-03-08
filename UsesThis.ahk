@@ -40,6 +40,8 @@
 #f::Run C:\Program Files\Mozilla Firefox\firefox.exe, , max
 ; {WIN}+o / 1Password
 #o::Run % "C:\Users\" . A_UserName . "\AppData\Local\1Password\app\8\1Password.exe", , max
+; {WIN}+w / WhatsApp
+#w::Run G:\Mùj disk\ZÁSTUPCE\WhatsApp.lnk, , max
 ;
 ;
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -49,30 +51,44 @@
 ; {ALT}+1 / Raindrop
 !Numpad1::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://app.raindrop.io/", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+2 / Calendar
 !Numpad2::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://calendar.google.com/", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+3 / Todoist
 !Numpad3::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://todoist.com/app/", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+4 / Gmail
 !Numpad4::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+5 / Feedly
 !Numpad5::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://feedly.com", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+6 / YouTube Music
 !Numpad6::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+7 / Google Podcasts
 !Numpad7::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://podcasts.google.com/queue?hl=cs", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+- / close Chrome
 !NumpadSub::
@@ -81,8 +97,6 @@ WinGet, chromewindows, List, ahk_exe chrome.exe
 Loop, % chromewindows
 winClose, % "ahk_id " chromewindows%A_Index%
 Return
-; {WIN}+w / WhatsApp
-#w::Run G:\Mùj disk\ZÁSTUPCE\WhatsApp.lnk, , max
 ;
 ;
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
