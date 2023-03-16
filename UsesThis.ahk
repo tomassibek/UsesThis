@@ -89,6 +89,11 @@ Return
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://podcasts.google.com/queue?hl=cs", , max
 sleep 1000
 send, {F11}
+; {ALT}+8 / ChatGPT
+!Numpad8::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://chat.openai.com/chat", , max
+sleep 1000
+send, {F11}
 Return
 ; {ALT}+- / close Chrome
 !NumpadSub::
@@ -157,14 +162,14 @@ Return
 #j::
 send, /
 sleep 1000
-send, (in:trash OR in:spam OR label:trsh NOT label:@magda) is:unread
+send, (in:trash OR in:spam OR label:trsh) is:unread
 send, {ENTER}
 Return
 ; {WIN}+q / SPAM + SELECT ALL (* + a) AND MARK AS READ (Shift + i) + GO TO INBOX
 #q::
 send, /
 sleep 1000
-send, label:trsh NOT label:@magda is:unread 
+send, label:trsh is:unread 
 send, {ENTER}
 sleep 2000
 send, {*}{a}
