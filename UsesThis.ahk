@@ -112,7 +112,7 @@ send, {F11}
 Return
 ; {ALT}+* / ChatGPT
 !NumpadMult::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://chat.openai.com/chat", , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bard.google.com", , max
 sleep 1000
 send, {F11}
 Return
