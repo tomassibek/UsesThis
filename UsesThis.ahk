@@ -110,7 +110,7 @@ Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrom
 sleep 1000
 send, {F11}
 Return
-; {ALT}+* / ChatGPT
+; {ALT}+* / Bard
 !NumpadMult::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bard.google.com", , max
 sleep 1000
@@ -143,8 +143,14 @@ Return
 ; HOTKEYS IV.
 ; documents
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {CTRL}+{ALT}+1
+; {CTRL}+{ALT}+1 / Notes
 ^!Numpad1::Run G:\Mùj disk\ÚKOLY\notes.xlsx, , max
+; {CTRL}+{ALT}+2 / VS CODE Workspace 1
+^!Numpad2::Run G:\Mùj disk\ZÁSTUPCE\vsc_provoz.code-workspace, , max
+; {CTRL}+{ALT}+3 / VS CODE Workspace 2
+^!Numpad3::Run G:\Mùj disk\ZÁSTUPCE\vsc_estopy.code-workspace, , max
+; {CTRL}+{ALT}+3 / VS CODE Workspace 3
+^!Numpad4::Run G:\Mùj disk\ZÁSTUPCE\vsc_usesthis.code-workspace, , max
 ;
 ;
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
