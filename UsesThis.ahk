@@ -35,11 +35,9 @@
 ; {WIN}+0(é) / Laragon
 #é::Run C:\laragon\laragon.exe, , max
 ; {WIN}+e / Microsoft Edge
-#e::Run %windir%\explorer.exe shell:Appsfolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge, , max
+#e::Run C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe, , max
 ; {WIN}+f / Firefox
 #f::Run C:\Program Files\Mozilla Firefox\firefox.exe, , max
-; {WIN}+r / Opera
-#r::Run C:\Users\Dell\AppData\Local\Programs\Opera\launcher.exe, , max
 ; {WIN}+o / 1Password
 #o::Run % "C:\Users\" . A_UserName . "\AppData\Local\1Password\app\8\1Password.exe", , max
 ; {WIN}+w / WhatsApp
@@ -54,67 +52,61 @@
 !Numpad1::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://app.raindrop.io/", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+2 / Calendar
 !Numpad2::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://calendar.google.com/", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+3 / Todoist
 !Numpad3::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://todoist.com/app/", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+4 / Gmail
 !Numpad4::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+5 / Feedly
 !Numpad5::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://feedly.com", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+6 / YouTube Music
 !Numpad6::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
-sleep 1000
 send, {F11}
 Return
 ; {ALT}+7 / Google Podcasts
 !Numpad7::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://podcasts.google.com/queue?hl=cs", , max
-sleep 1000
 send, {F11}
 Return
 ; {ALT}+8 / mujRozhlas
 !Numpad8::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://www.mujrozhlas.cz/mujPlaylist/oblibene", , max
-sleep 1000
 send, {F11}
 Return
 ; {ALT}+9 / BBC Sound
 !Numpad9::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://www.bbc.co.uk/sounds/my", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+/ / Bandcamp
 !NumpadDiv::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bandcamp.com/djdrobek/wishlist", , max
 sleep 1000
-send, {F11}
 Return
 ; {ALT}+* / Bard
 !NumpadMult::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bard.google.com", , max
 sleep 1000
-send, {F11}
+Return
+; {ALT}++ / Kerio
+!NumpadAdd::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://posta.kinet.cz/webmail/", , max
+sleep 1000
 Return
 ; {ALT}+- / close Chrome
 !NumpadSub::
@@ -149,7 +141,7 @@ Return
 ^!Numpad2::Run G:\Mùj disk\ZÁSTUPCE\vsc_provoz.code-workspace, , max
 ; {CTRL}+{ALT}+3 / VS CODE Workspace 2
 ^!Numpad3::Run G:\Mùj disk\ZÁSTUPCE\vsc_estopy.code-workspace, , max
-; {CTRL}+{ALT}+3 / VS CODE Workspace 3
+; {CTRL}+{ALT}+4 / VS CODE Workspace 3
 ^!Numpad4::Run G:\Mùj disk\ZÁSTUPCE\vsc_usesthis.code-workspace, , max
 ;
 ;
@@ -161,14 +153,28 @@ Return
 !k::
 send, /
 sleep 1000
-send,(label:@work) OR (in:inbox) OR (is:starred)
+send,(label:@work AND label:todo) OR (in:inbox) OR (is:starred)
+send, {ENTER}
+Return
+; {ALT}+v / WORK – waiting
+!v::
+send, /
+sleep 1000
+send,label:waiting 
 send, {ENTER}
 Return
 ; {ALT}+p / PRIVATE – todo
 !p::
 send, /
 sleep 1000
-send, label:@private 
+send, (label:@private AND label:todo)
+send, {ENTER}
+Return
+; {ALT}+t / TODAY
+!t::
+send, /
+sleep 1000
+send, label:today
 send, {ENTER}
 Return
 ; {ALT}+j / SPAM
@@ -221,11 +227,10 @@ Return
 ::pml::–
 ::ppx::|
 ::mzr::&nbsp;
-::mlt::tomas.sibek{+}test@gmail.com
+::mlt::tomas.sibek@gmail.com
 ::ckb::115-2147560247/0100
-::cux::115-2147560247
 ::icox::73744689
-::tlf::123456789
+::tlf::721448007
 ::jmx::Test Test
 ::qdd::
 FormatTime, CurrentDateTime,, yyddMM
