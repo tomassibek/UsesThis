@@ -4,11 +4,15 @@ layout: default
 
 # AutoHotkey
 
-**Jmenuju se Tomáš. Žiju mezi Karlštejnem a Křivoklátem. Pomáhám online projektům do cíle. Radost mi dělají rodina, zahrada, lesy, knížky a muzika. Práci na počítači si neumím předtsavit AutoHotkey.**
+**Jmenuju se Tomáš. Žiju mezi Karlštejnem a Křivoklátem. Pomáhám online projektům do cíle. Radost mi dělají rodina, zahrada, lesy, knížky a muzika. Práci na počítači si neumím předtsavit bez AutoHotkey.**
 
 
 ## UsesThis.ahk
 Personal Autohotkey script and working notes for inspiration. / Osobní Autohotkey script pro inspiraci.
+
+## Basics
+autohotkey.com: [Tutorial](https://autohotkey.com/docs/Tutorial.htm)
+VS Code plugin [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
 
 ## Articles about Autohotkey
 
