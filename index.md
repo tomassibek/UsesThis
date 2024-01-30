@@ -4,7 +4,7 @@ layout: default
 
 # AutoHotkey
 
-**Jmenuju se Tomáš Síbek. Žiju mezi Karlštejnem a Křivoklátem. Pracuju v Kinetu, kde pomáhám online projektům do cíle. Radost mi dělají rodina, zahrada, lesy, knížky a muzika. Práci na počítači si neumím předtsavit AutoHotkey.**
+**Jmenuju se Tomáš. Žiju mezi Karlštejnem a Křivoklátem. Pomáhám online projektům do cíle. Radost mi dělají rodina, zahrada, lesy, knížky a muzika. Práci na počítači si neumím předtsavit AutoHotkey.**
 
 
 ## UsesThis.ahk
@@ -24,7 +24,4 @@ Pepak.net: [AutoHotKey](https://web.archive.org/web/20210117084211/https://www.p
 
 &nbsp;
 
-Jako většina zanechávám spoustu zbytečných stop v síti, ale mám tu v nich docela pořádek.
-
 &nbsp;
-
