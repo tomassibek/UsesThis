@@ -2,11 +2,11 @@
 layout: default
 ---
 
-**Jmenuju se Tomáš. Žiju mezi Karlštejnem a Křivoklátem. Pomáhám online projektům do cíle. Radost mi dělají rodina, zahrada, lesy, knížky a muzika. Práci na počítači si neumím předtsavit bez AutoHotkey.**
+**My name's Tomáš. I live somewhere between Karlštejn and Křivoklát. I help online projects reach their goals. Family, gardening, forests, books, and music make me happy. I can't imagine working on my computer without AutoHotkey.**
 
 
 ## UsesThis.ahk
-Personal Autohotkey script and working notes for inspiration. / Osobní Autohotkey script pro inspiraci.
+Personal Autohotkey script and working notes for inspiration.
 
 
 ## AutoHotkey
@@ -22,7 +22,7 @@ Leo Babauta: [Edit Your Life, Part 4: Your Work Space](https://web.archive.org/w
 Travis Boylls: [How to Use AutoHotkey](https://web.archive.org/web/20220821213632/https://www.wikihow.com/Use-AutoHotkey)
 
 
-## Články o Autohotkey
+## Articles about Autohotkey in czech
 
 Daniel Gamrot: [Kdo ještě neznáte AutoHotkey?](https://web.archive.org/web/20220925071101/https://danielgamrot.cz/autohotkey-automatizace-psani-klavesove-zkratky/)
 
