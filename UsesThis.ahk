@@ -7,6 +7,7 @@
 ; https://github.com/mark-wiemer/vscode-autohotkey-plus-plus
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ;
+;
 ; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; HOTKEYS I.
 ; desktop apps
@@ -52,33 +53,33 @@
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://app.raindrop.io/", , max
 sleep 1000
 Return
-; {ALT}+2 / Todoist
+; {ALT}+2 / JIRA
 !Numpad2::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://todoist.com/app/", , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://kinet.atlassian.net/issues/?filter=10011", , max
+Return
+; {ALT}+3 / Tasks
+!Numpad3::
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://tasksboard.com/app", , max
 sleep 1000
 Return
-; {ALT}+3 / Calendar
-!Numpad3::
+; {ALT}+4 / Calendar
+!Numpad4::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://calendar.google.com/", , max
 sleep 1000
 Return
-; {ALT}+4 / Gmail
-!Numpad4::
+; {ALT}+5 / Gmail
+!Numpad5::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://mail.google.com/", , max
 sleep 1000
 Return
-; {ALT}+5 / YouTube Music
-!Numpad5::
+; {ALT}+6 / YT Music
+!Numpad6::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com", , max
 Return
-; {ALT}+6 / BBC Sound
-!Numpad6::
+; {ALT}+7 / BBC Sounds
+!Numpad7::
 Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://www.bbc.co.uk/sounds/my", , max
 sleep 1000
-Return
-; {ALT}+7 / Bandcamp
-!Numpad7::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://bandcamp.com/djdrobek/wishlist", , max
 Return
 ; {ALT}+8 / Feedly
 !Numpad8::
@@ -87,7 +88,7 @@ sleep 1000
 Return
 ; {ALT}+9 / Gemini
 !Numpad9::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://gemini.google.com/app", , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://chatgpt.com", , max
 sleep 1000
 Return
 ; {ALT}+- / close Chrome
@@ -214,7 +215,12 @@ Return
 ::icox::73744689
 ::tlf::608839338
 ::jmx::Lorem Ipsum
+::x1::1234567812345678
 ::qdd::
 FormatTime, CurrentDateTime,, yyddMM
+SendInput %CurrentDateTime%
+return
+::qdt::
+FormatTime, CurrentDateTime,, yyyy-MM-dd
 SendInput %CurrentDateTime%
 return
