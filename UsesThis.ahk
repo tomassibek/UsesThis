@@ -59,7 +59,7 @@ Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrom
 Return
 ; {ALT}+3 / Tasks
 !Numpad3::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://tasksboard.com/app", , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://calendar.google.com/calendar/u/0/r/tasks", , max
 sleep 1000
 Return
 ; {ALT}+4 / Calendar
@@ -88,7 +88,7 @@ sleep 1000
 Return
 ; {ALT}+9 / Gemini
 !Numpad9::
-Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://chatgpt.com", , max
+Run % "C:\Users\" . A_UserName . "\AppData\Local\Google\Chrome\Application\chrome.exe --app=https://gemini.google.com", , max
 sleep 1000
 Return
 ; {ALT}+- / close Chrome
@@ -156,6 +156,13 @@ Return
 send, /
 sleep 1000
 send, has:yellow-star
+send, {ENTER}
+Return
+; {ALT}+u / UNREAD
+!u::
+send, /
+sleep 1000
+send, is:unread
 send, {ENTER}
 Return
 ; {ALT}+j / SPAM
