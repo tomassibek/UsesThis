@@ -2,7 +2,7 @@
 layout: default
 ---
 
-**My name's Tomáš. I live somewhere between Karlštejn and Křivoklát. I help online projects reach their goals. Family, gardening, forests, books, and music make me happy. I can't imagine working on my computer without my AutoHotkey script.**
+**My name's Tomáš. I live somewhere between Karlštejn and Křivoklát. I help online projects reach their goals. Family, gardening, forests, books and music make me happy. I can't imagine working on my computer without my AutoHotkey script.**
 
 
 ## UsesThis.ahk
