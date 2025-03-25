@@ -85,9 +85,9 @@
     sleep "1000"
     Return
 }
-; {ALT}+3 / Keep
+; {ALT}+3 / Tasks
 !Numpad3::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+3 Keep.lnk",, "Max"
+    Run "C:\Users\" . A_UserName . "\Desktop\A+3 Tasks.lnk",, "Max"
     sleep "1000"
     Return
 }
@@ -103,37 +103,28 @@
     sleep "1000"
     Return
 }
-; {ALT}+6 / YT Music
+; {ALT}+6 / Messages
 !Numpad6::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+6 YT Music.lnk",, "Max"
+    Run "C:\Users\" . A_UserName . "\Desktop\A+6 Messages.lnk",, "Max"
     sleep "1000"
     Return
 }
-; {ALT}+7 / Translate
+; {ALT}+7 / YT Music
 !Numpad7::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+7 Translate.lnk",, "Max"
+    Run "C:\Users\" . A_UserName . "\Desktop\A+7 YT Music.lnk",, "Max"
     sleep "1000"
     Return
 }
-; {ALT}+8 / Gemini
+; {ALT}+8 / Translate
 !Numpad8::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+8 Gemini.lnk",, "Max"
+    Run "C:\Users\" . A_UserName . "\Desktop\A+8 Translate.lnk",, "Max"
     sleep "1000"
     Return
 }
-; {ALT}+9 / VS Code – todo.txt
+; {ALT}+9 / Gemini
 !Numpad9::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+9 todotxt.lnk",, "Max"
+    Run "C:\Users\" . A_UserName . "\Desktop\A+9 Gemini.lnk",, "Max"
     sleep "1000"
-    Return
-}
-; {ALT}+n / Raindrop search in Chrome omnibar
-!n::{
-    send "{F6}"
-    sleep "500"
-    send "rd"
-    sleep "500"
-    send "{Space}"
     Return
 }
 ;
@@ -187,8 +178,8 @@ Return
     Return
 }
 
-; {ALT}+t / yellow star
-!t::{
+; {ALT}+y / yellow star
+!y::{
     send "/"
     sleep "1000"
     send "has:yellow-star"
@@ -255,9 +246,13 @@ Return
 ^!Numpad1::{
     Run "G:\Můj disk\ÚKOLY\notes.xlsx",, "Max"
 }
-; {CTRL}+{ALT}+2 / VS CODE Workspace 2
+; {CTRL}+{ALT}+2 / VS CODE Workspace – usesthis
 ^!Numpad2::{
     Run "G:\Můj disk\CODE\vsc_usesthis.code-workspace",, "Max"
+}
+; {CTRL}+{ALT}+3 / VS CODE Workspace – todotxt
+^!Numpad3::{
+    Run "G:\Můj disk\CODE\todotxt.code-workspace",, "Max"
 }
 ;
 ;
