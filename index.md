@@ -7,9 +7,11 @@ layout: default
 
 ## UsesThis.ahk
 [Personal Autohotkey script](https://github.com/tomassibek/UsesThis/blob/main/UsesThis.ahk) and working notes for inspiration.
-&nbsp; 
+ 
+ 
 ___
-&nbsp; 
+ 
+ 
 ## Bookmarks
 
 ### AutoHotkey
