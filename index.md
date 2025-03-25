@@ -25,6 +25,7 @@ Autohotkey.com: [Tutorial](https://www.autohotkey.com/docs/v2/Tutorial.htm)
 Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
 
 VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
+
 ___
 
 &nbsp;
@@ -50,14 +51,8 @@ wikiHow – [How to Use AutoHotkey](https://www.wikihow.com/Use-AutoHotkey)
 
 ___
 
-### Articles about Autohotkey in czech
-
-#### Daniel Gamrot
-[Kdo ještě neznáte AutoHotkey?](https://web.archive.org/web/20220925071101/https://danielgamrot.cz/autohotkey-automatizace-psani-klavesove-zkratky/)
-
-#### Pepak.net
-[AutoHotKey](https://web.archive.org/web/20210117084211/https://www.pepak.net/software/autohotkey)
-
+&nbsp;
 
 &nbsp;
+
 &nbsp;
