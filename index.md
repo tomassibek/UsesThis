@@ -18,13 +18,20 @@ ___
 
 ## Bookmarks
 ### AutoHotkey
+___
+
 Autohotkey.com: [Tutorial](https://www.autohotkey.com/docs/v2/Tutorial.htm)
 
 Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
 
 VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
+___
+
+&nbsp;
 
 ### Articles about Autohotkey
+
+___
 
 #### Leo Babauta
 
@@ -32,9 +39,16 @@ VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-aut
 
 zen habits – [Edit Your Life, Part 4: Your Work Space](https://zenhabits.net/edit-your-life-part-4-your-work-space/)
 
+___
+
+&nbsp;
+
+___
+
 #### Travis Boylls
 wikiHow – [How to Use AutoHotkey](https://www.wikihow.com/Use-AutoHotkey)
 
+___
 
 ### Articles about Autohotkey in czech
 
