@@ -7,16 +7,19 @@ layout: default
 
 ## UsesThis.ahk
 [Personal Autohotkey script](https://github.com/tomassibek/UsesThis/blob/main/UsesThis.ahk) and working notes for inspiration.
+
 &nbsp;
+
 &nbsp;
 ___
 
 ## Bookmarks
 ### AutoHotkey
 Autohotkey.com: [Tutorial](https://www.autohotkey.com/docs/v2/Tutorial.htm)
-Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
-VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
 
+Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
+
+VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
 
 ### Articles about Autohotkey
 
