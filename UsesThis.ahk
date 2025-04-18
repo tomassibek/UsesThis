@@ -73,6 +73,12 @@
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; HOTKEYS II. / online apps
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; {ALT}+0 / Feedly
+!Numpad0::{
+    Run "C:\Users\" . A_UserName . "\Desktop\A+0 Feedly.lnk",, "Max"
+    sleep "1000"
+    Return
+}
 ; {ALT}+1 / Raindrop
 !Numpad1::{
     Run "C:\Users\" . A_UserName . "\Desktop\A+1 Raindrop.io.lnk",, "Max"
@@ -124,6 +130,12 @@
 ; {ALT}+9 / Gemini
 !Numpad9::{
     Run "C:\Users\" . A_UserName . "\Desktop\A+9 Gemini.lnk",, "Max"
+    sleep "1000"
+    Return
+}
+; {ALT}+/ / i2
+!NumpadDiv::{
+    Run "C:\Users\" . A_UserName . "\Desktop\A+Div i2.lnk",, "Max"
     sleep "1000"
     Return
 }

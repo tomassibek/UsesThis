@@ -8,6 +8,8 @@ layout: default
 ## UsesThis.ahk
 [Personal Autohotkey script](https://github.com/tomassibek/UsesThis/blob/main/UsesThis.ahk) and working notes for inspiration.
 
+Shortkeys (Custom Keyboard Shortcuts) https://github.com/crittermike/shortkeys/wiki/How-To-Use-Shortkeys
+
 &nbsp;
 
 ___
