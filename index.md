@@ -22,11 +22,11 @@ ___
 ### AutoHotkey
 ___
 
-Autohotkey.com: [Tutorial](https://www.autohotkey.com/docs/v2/Tutorial.htm)
+* Tutorial: [Tutorial](https://www.autohotkey.com/docs/v2/Tutorial.htm)
 
-Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
+* Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
 
-VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
+* VS Code plugin: [AutoHotkey Plus Plus](https://github.com/mark-wiemer/vscode-autohotkey-plus-plus)
 
 ___
 

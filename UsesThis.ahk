@@ -20,9 +20,9 @@
 #+::{
     Run "C:\Program Files\Google\Chrome\Application\chrome.exe",, "Max"
 }
-; {WIN}+2(ě) / Total Commander
+; {WIN}+2(ě) / Altap Salamander
 #ě::{
-    Run "C:\Program Files\totalcmd\TOTALCMD64.EXE",, "Max"
+    Run "C:\Program Files (x86)\Altap Salamander\salamand.exe",, "Max"
 }
 ; {WIN}+3(š) / Visual Studio Code
 #š::{
@@ -148,7 +148,7 @@
 ^!a::{
     Run "shell:AppsFolder",, "max"
 }
-; {CTRL}+{ALT}+b / Windows bloetooth
+; {CTRL}+{ALT}+b / Windows bluetooth
 ^!b::{
     Run "ms-settings:bluetooth",, "max"
 }
@@ -163,7 +163,7 @@
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS V. / Gmail shortcuts
+; HOTKEYS IV. / Gmail shortcuts
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {ALT}+k / WORK – todo
 !k::{
@@ -252,7 +252,7 @@ Return
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS IV. / documents
+; HOTKEYS V. / documents
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {CTRL}+{ALT}+1 / Notes
 ^!Numpad1::{
@@ -277,12 +277,15 @@ Return
 ::uvz::„“ 
 ::pml::–
 ::ppx::|
+::ppv::…
+::spk::→
 ::mzr::&nbsp;
 ::mlt::tomas.sibek@gmail.com
 ::tms::tomas.sibek
 ::ckb::7214480072/0100
 ::icox::73744689
 ::tlf::608839338
+::pptf::Prosím o přepis textu z fotografie.
 ::jmx::Lorem Ipsum
 ::qdd::{
     currentDateTime := FormatTime(A_Now, "yyddMM")
@@ -296,3 +299,63 @@ Return
 }
 ;
 ;
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; GOOGLE CHROME EXTENSIONS / shortcuts
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; {ALT}+1 / Raindrop.io – save
+; {ALT}+3 / Tasks – save
+; {ALT}+5 / Gmail – send
+; {ALT}+s / Raindrop.io
+; {ALT}+o / 1password
+; {ALT}+z / ColorZilla
+; {ALT}+i / IP Address and Domain Information
+; {ALT}+c / SSL Checker
+; {ALT}+w / Wappalyzer
+;
+;
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; GOOGLE CHROME OMNIBOX / search shortcuts
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; iu / i2 úkoly
+; io / i2 úkoly opakované
+; is / i2 služby
+; rd / Raindrop.io 
+; trn / Translate
+; ytb / Youtube
+; ytm / YT Music
+; bng / Bing
+; ddg / DuckDuckGo
+; szn / Seznam.cz
+; @gemini
+;
+;
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; SHORTKEYS.APP / Google Chrome extension
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; +/1 / Raindrop.io
+; ě/2 / JIRA
+; š/3 / Tasks
+; č/4 / Calendar
+; ř/5 / Gmail
+; ž/6 / Messages
+; ý/7 / YT Music
+; á/8 / Translate
+; í/9 / Gemini
+; é/0 / Feedly
+; =/% / Blog drafts
+; y / Windy
+;
+; u / úkoly
+; x / úkoly opakované
+; m / úkoly M.
+; t / úkoly na kontakt Síbek
+; v / úkoly komplet
+; k / kalendář
+; p / ekonomika práce
+; f / zakázky k fakturaci
+; s / služby
+;
+; q / closetab
+; r / hardreload
+; n / forward
+; b / back

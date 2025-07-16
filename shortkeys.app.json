@@ -1,55 +1,55 @@
 [
-    {
-        "key": "u",
-        "action": "openbookmark",
-        "bookmark": "u – i2 úkoly",
-        "id": "64695ce2-b0d0-4e2a-a8c8-7ec983f9b736",
-        "sites": "",
-        "sitesArray": [
-          ""
-        ]
-      },
-      {
-        "action": "openbookmark",
-        "key": "x",
-        "bookmark": "x – i2 opakované úkoly",
-        "id": "dc2ef45f-35e6-435c-aa3d-36b5f556e75a",
-        "sites": "",
-        "sitesArray": [
-          ""
-        ]
-      },
-      {
-        "key": "m",
-        "action": "openbookmark",
-        "bookmark": "m – i2 úkoly M",
-        "id": "f492606a-eabc-4c22-ab8a-b0ab069eb111",
-        "sites": "",
-        "sitesArray": [
-          ""
-        ]
-      },
-      {
-        "key": "t",
-        "action": "openbookmark",
-        "bookmark": "t – i2 úkoly na kontakt Síbek",
-        "id": "ddbad664-066c-4a05-a39e-65536f031b67",
-        "sites": "",
-        "sitesArray": [
-          ""
-        ]
-      },
-      {
-        "key": "v",
-        "action": "openbookmark",
-        "id": "7f762a0b-9a48-4a83-bd98-604a5f64ebb5",
-        "sites": "",
-        "sitesArray": [
-          ""
-        ],
-        "bookmark": "v – i2 úkoly komplet"
-      },
-      {
+  {
+    "key": "u",
+    "action": "openbookmark",
+    "bookmark": "u – i2 úkoly",
+    "id": "64695ce2-b0d0-4e2a-a8c8-7ec983f9b736",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "action": "openbookmark",
+    "key": "x",
+    "bookmark": "x – i2 opakované úkoly",
+    "id": "dc2ef45f-35e6-435c-aa3d-36b5f556e75a",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "m",
+    "action": "openbookmark",
+    "bookmark": "m – i2 úkoly M",
+    "id": "f492606a-eabc-4c22-ab8a-b0ab069eb111",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "t",
+    "action": "openbookmark",
+    "bookmark": "t – i2 úkoly na kontakt Síbek",
+    "id": "ddbad664-066c-4a05-a39e-65536f031b67",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "v",
+    "action": "openbookmark",
+    "id": "7f762a0b-9a48-4a83-bd98-604a5f64ebb5",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "bookmark": "v – i2 úkoly komplet"
+  },
+  {
     "action": "openbookmark",
     "key": "k",
     "bookmark": "k – i2 kalendář",
@@ -190,7 +190,7 @@
     ]
   },
   {
-    "key": "d",
+    "key": "y",
     "action": "openbookmark",
     "bookmark": "Windy",
     "id": "841b3666-ae6e-41c6-a986-2186a75217ab",
@@ -230,6 +230,16 @@
     "key": "q",
     "action": "closetab",
     "id": "cb6c03c4-5f12-4f3b-af27-10e0f58893ea",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "=",
+    "action": "openbookmark",
+    "bookmark": "sibek.cz / koncepty",
+    "id": "d231c991-1262-40f0-96b4-79376f416ad4",
     "sites": "",
     "sitesArray": [
       ""
