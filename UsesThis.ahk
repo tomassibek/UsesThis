@@ -7,165 +7,175 @@
 ; https://github.com/mark-wiemer/vscode-autohotkey-plus-plus
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ;
+;,---,---,---,---,---,---,---,---,---,---,---,---,---,-------,
+;|1/2| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | + | ' | <-    |
+;|---'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-----|
+;| ->| | Q | W | E | R | T | Y | U | I | O | P | ] | ^ |     |
+;|-----',--',--',--',--',--',--',--',--',--',--',--',--'|    |
+;| Caps | A | S | D | F | G | H | J | K | L | \ | [ | * |    |
+;|----,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'---'----|
+;|    | < | Z | X | C | V | B | N | M | , | . | - |          |
+;|----'-,-',--'--,'---'---'---'---'---'---'-,-'---',--,------|
+;| ctrl |  | alt |                          |altgr |  | ctrl |
+;'------'  '-----'--------------------------'------'  '------'
+;
 #Requires AutoHotkey v2.0
 ;
-; –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS I. / desktop apps
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {WIN}+; / Downloads
+; HOTKEYS I. → desktop apps
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; {WIN}+{;} → Downloads
 #;::{
     Run "C:\Users\" . A_UserName . "\Downloads\",, "Max"
 }
-; {WIN}+1(+) / Chrome
+; {WIN}+{+} → Chrome
 #+::{
     Run "C:\Program Files\Google\Chrome\Application\chrome.exe",, "Max"
 }
-; {WIN}+2(ě) / Altap Salamander
+; {WIN}+{ě} → Total Commander
 #ě::{
-    Run "C:\Program Files (x86)\Altap Salamander\salamand.exe",, "Max"
+    Run "C:\Program Files\totalcmd\TOTALCMD64.EXE",, "Max"
 }
-; {WIN}+3(š) / Visual Studio Code
+; {WIN}+{š} → VS Code
 #š::{
     Run "C:\Users\" . A_UserName . "\AppData\Local\Programs\Microsoft VS Code\Code.exe",, "Max"
 }
-; {WIN}+4(č) / Word
+; {WIN}+{č} → Word
 #č::{
     Run "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE",, "Max"
 }
-; {WIN}+5(ř) / Excel
+; {WIN}+{ř} → Excel
 #ř::{
     Run "C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE",, "Max"
 }
-; {WIN}+6(ž) / VLC media player
+; {WIN}+{ž} → PDF-XChange Editor
 #ž::{
-    Run "C:\Program Files\VideoLAN\VLC\vlc.exe",, "Max"
+    Run "C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe",, "Max"
 }
-; {WIN}+7(ý) / IrfanView
+; {WIN}+{ý} → IrfanView
 #ý::{
     Run "C:\Program Files\IrfanView\i_view64.exe",, "Max"
 }
-; {WIN}+8(á) / Adobe Acrobat
+; {WIN}+{á} → GIMP
 #á::{
-    Run "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe",, "Max"
-}
-; {WIN}+9(í) / GIMP
-#í::{
     Run "C:\Users\" . A_UserName . "\AppData\Local\Programs\GIMP 2\bin\gimp-2.10.exe",, "Max"
 }
-; {WIN}+é / Downloads
-#é::{
-    Run "C:\Users\" . A_UserName . "\Desktop\W+0 Desktop.lnk",, "Max"
-}
-; {WIN}+e / Microsoft Edge
+; {WIN}+{e} → Microsoft Edge
 #e::{
     Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",, "Max"
 }
-; {WIN}+o / 1Password
+; {WIN}+{o} → 1Password
 #o::{
     Run "C:\Users\" . A_UserName . "\AppData\Local\1Password\app\8\1Password.exe",, "Max"
 }
-; {WIN}+w / WhatsApp
+; {WIN}+{w} → WhatsApp
 #w::{
-    Run "C:\Users\" . A_UserName . "\Desktop\W+w WhatsApp",, "Max"
+    Run "C:\Users\" . A_UserName . "\Desktop\WhatsApp",, "Max"
 }
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS II. / online apps
+; HOTKEYS II. → Chrome apps
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {ALT}+0 / Feedly
-!Numpad0::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+0 Feedly.lnk",, "Max"
-    sleep "1000"
-    Return
-}
-; {ALT}+1 / Raindrop
+; {ALT}+{Num1} → Calendar
 !Numpad1::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+1 Raindrop.io.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://calendar.google.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+2 / JIRA
+; {ALT}+{Num2} → Raindrop.io
 !Numpad2::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+2 JIRA.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://app.raindrop.io/my/62872361",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+3 / Tasks
+; {ALT}+{Num3} → Tasks
 !Numpad3::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+3 Tasks.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://tasks.google.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+4 / Calendar
+; {ALT}+{Num4} → Gmail
 !Numpad4::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+4 Calendar.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://mail.google.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+5 / Gmail
+; {ALT}+{Num5} → Messages
 !Numpad5::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+5 Gmail.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://messages.google.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+6 / Messages
+; {ALT}+{Num6} → Contacts
 !Numpad6::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+6 Messages.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://contacts.google.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+7 / YT Music
+; {ALT}+{Num7} → Gemini
 !Numpad7::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+7 YT Music.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://gemini.google.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+8 / Translate
+; {ALT}+{Num8} → YouTube Music
 !Numpad8::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+8 Translate.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://music.youtube.com",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+9 / Gemini
+; {ALT}+{Num9} → YouTube
 !Numpad9::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+9 Gemini.lnk",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://www.youtube.com/watch?v=&list=PLL05By-aZ5NlV26rNra_Fzbo6w1b1zpdK",, "Max"
     sleep "1000"
+    WinMaximize "A"
     Return
 }
-; {ALT}+/ / i2
-!NumpadDiv::{
-    Run "C:\Users\" . A_UserName . "\Desktop\A+Div i2.lnk",, "Max"
-    sleep "1000"
+; {ALT}+{c} → close Google Chrome
+!c::{
+    SoundBeep(1500)
+    chromewindows := WinGetList("ahk_exe chrome.exe")
+        for window in chromewindows {
+        WinClose(window)
+        }
     Return
 }
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS III. / system settings
+; HOTKEYS III. → system settings
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {CTRL}+{ALT}+a / Windows apps
+; {CTRL}+{ALT}+{a} → Windows apps
 ^!a::{
     Run "shell:AppsFolder",, "max"
 }
-; {CTRL}+{ALT}+b / Windows bluetooth
+; {CTRL}+{ALT}+{b} → Windows bluetooth
 ^!b::{
     Run "ms-settings:bluetooth",, "max"
 }
-; {CTRL}+{ALT}+s / Windows sound
+; {CTRL}+{ALT}+{s} → Windows sound
 ^!s::{
     Run "ms-settings:apps-volume",, "max"
 }
-; {CTRL}+{ALT}+t / Task manager
+; {CTRL}+{ALT}+{t} → Task manager
 ^!t::{
     Run "taskmgr",, "max"
 }
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS IV. / Gmail shortcuts
+; HOTKEYS IV. → Gmail shortcuts
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {ALT}+k / WORK – todo
+; {ALT}+{k} → find @work
 !k::{
     send "/"
     sleep "1000"
@@ -173,7 +183,7 @@
     send "{ENTER}"
     Return
 }
-; {ALT}+p / PRIVATE – todo
+; {ALT}+{p} → find @private
 !p::{
     send "/"
     sleep "1000"
@@ -181,7 +191,7 @@
     send "{ENTER}"
 Return
 }
-; {ALT}+v / waiting
+; {ALT}+{v} → find waiting
 !v::{
     send "/"
     sleep "1000"
@@ -190,7 +200,7 @@ Return
     Return
 }
 
-; {ALT}+y / yellow star
+; {ALT}+{y} → find yellow star
 !y::{
     send "/"
     sleep "1000"
@@ -198,7 +208,7 @@ Return
     send "{ENTER}"
 Return
 }
-; {ALT}+u / unread
+; {ALT}+{u} → find unread
 !u::{
     send "/"
     sleep "1000"
@@ -206,7 +216,7 @@ Return
     send "{ENTER}"
 Return
 }
-; {ALT}+j / spam
+; {ALT}+{j} → find spam
 !j::{
 send "/"
 sleep "1000"
@@ -214,7 +224,7 @@ send "(in:trash OR in:spam OR label:@trash) is:unread"
 send "{ENTER}"
 Return
 }
-; {ALT}+q / SPAM + SELECT ALL (* + a) AND MARK AS READ (Shift + i) + GO TO INBOX
+; {ALT}+{q} → find spam → select all → mark as read → go to inbox
 !q::{
 send "/"
 sleep "1000"
@@ -228,7 +238,7 @@ sleep "1000"
 send "{g}{i}"
 Return
 }
-; {ALT}+r / SELECT ALL (* + a) AND MARK AS READ (Shift + i) AND ARCHIVE (e)
+; {ALT}+{r} → select all → mark as read → archive
 !r::{
 send "{*}{a}"
 sleep "1000"
@@ -237,14 +247,14 @@ sleep "1000"
 send "e"
 Return
 }
-; {ALT}+e / MARK AS READ (Shift + i) AND ARCHIVE (e)
+; {ALT}+{e} → mark as read → archive
 !e::{
 send "+i"
 sleep "1000"
 send "e"
 Return
 }
-; {ALT}+m / MOVE TO TRASH
+; {ALT}+{m} → move to trash
 !m::{
 send "{#}"
 Return
@@ -252,27 +262,22 @@ Return
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTKEYS V. / documents
+; HOTKEYS V. → documents
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {CTRL}+{ALT}+1 / Notes
+; {CTRL}+{ALT}+{1} → notes
 ^!Numpad1::{
     Run "G:\Můj disk\ÚKOLY\notes.xlsx",, "Max"
 }
-; {CTRL}+{ALT}+2 / VS CODE Workspace – usesthis
+; {CTRL}+{ALT}+{2} → VS CODE Workspace – usesthis
 ^!Numpad2::{
-    Run "G:\Můj disk\CODE\vsc_usesthis.code-workspace",, "Max"
-}
-; {CTRL}+{ALT}+3 / VS CODE Workspace – todotxt
-^!Numpad3::{
-    Run "G:\Můj disk\CODE\todotxt.code-workspace",, "Max"
+    Run "G:\Můj disk\CODE\usesthis_todo.code-workspace",, "Max"
 }
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; HOTSTRING I. / punctuation etc.
+; HOTSTRING I. → punctuation etc.
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-::lrpsn::Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-::lrpsx::Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Phasellus et lorem id felis nonummy placerat. Donec vitae arcu. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Nulla non lectus sed nisl molestie malesuada. Vestibulum fermentum tortor id mi. Vivamus ac leo pretium faucibus. Mauris elementum mauris vitae tortor. Pellentesque sapien. Etiam quis quam. Proin mattis lacinia justo. Phasellus et lorem id felis nonummy placerat. Proin in tellus sit amet nibh dignissim sagittis. Maecenas sollicitudin. Quisque porta.`n`nEtiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Etiam commodo dui eget wisi. Duis condimentum augue id magna semper rutrum. Nulla est. Mauris metus. Vivamus porttitor turpis ac leo. Praesent vitae arcu tempor neque lacinia pretium. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Aliquam id dolor. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Nunc dapibus tortor vel mi dapibus sollicitudin.`n`nFusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Nunc dapibus tortor vel mi dapibus sollicitudin. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio. Nullam rhoncus aliquam metus. Fusce aliquam vestibulum ipsum. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. In dapibus augue non sapien. Etiam posuere lacus quis dolor. Nulla non arcu lacinia neque faucibus fringilla. Duis risus.`n`nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et lorem id felis nonummy placerat. Nulla est. Pellentesque ipsum. Mauris tincidunt sem sed arcu. Suspendisse nisl. Sed convallis magna eu sem. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.`n`nDuis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Nullam rhoncus aliquam metus. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Etiam quis quam. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque arcu. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Aliquam erat volutpat. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Pellentesque sapien. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Duis pulvinar. Proin mattis lacinia justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Curabitur sagittis hendrerit ante. Pellentesque pretium lectus id turpis. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.`n`nDuis pulvinar. Curabitur bibendum justo non orci. Nullam dapibus fermentum ipsum. Aenean placerat. Aliquam erat volutpat. Integer tempor. Curabitur vitae diam non enim vestibulum interdum. Suspendisse sagittis ultrices augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Donec iaculis gravida nulla. In dapibus augue non sapien. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Nullam faucibus mi quis velit.`n`nInteger vulputate sem a nibh rutrum consequat. Aliquam erat volutpat. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Etiam quis quam. Nam quis nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Praesent vitae arcu tempor neque lacinia pretium. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Integer pellentesque quam vel velit. Et harum quidem rerum facilis est et expedita distinctio. Donec iaculis gravida nulla. Nulla quis diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`n`nCurabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Nunc dapibus tortor vel mi dapibus sollicitudin. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam commodo dui eget wisi. Maecenas aliquet accumsan leo. Curabitur sagittis hendrerit ante. Fusce suscipit libero eget elit. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Nulla non arcu lacinia neque faucibus fringilla. Nullam dapibus fermentum ipsum. In rutrum. Curabitur vitae diam non enim vestibulum interdum. Duis risus. Duis viverra diam non justo. Mauris elementum mauris vitae tortor. Aliquam erat volutpat. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit.`n`nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Suspendisse nisl. Etiam commodo dui eget wisi. Integer tempor. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Praesent dapibus. Pellentesque arcu. Aliquam erat volutpat. Nunc auctor. Curabitur sagittis hendrerit ante. Pellentesque sapien.`n`nPraesent in mauris eu tortor porttitor accumsan. Integer pellentesque quam vel velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aenean vel massa quis mauris vehicula lacinia. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Nunc tincidunt ante vitae massa. Proin in tellus sit amet nibh dignissim sagittis. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Duis viverra diam non justo. Donec quis nibh at felis congue commodo. Fusce suscipit libero eget elit. Curabitur bibendum justo non orci. Aliquam id dolor. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Nullam rhoncus aliquam metus. Duis pulvinar. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Sed ac dolor sit amet purus malesuada congue.
+::lrpsn::Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ::,,::bflmpsvz
 ::uvz::„“ 
 ::pml::–
@@ -300,62 +305,75 @@ Return
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; GOOGLE CHROME EXTENSIONS / shortcuts
+;  Google Chrome extensions → shortcuts
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {ALT}+1 / Raindrop.io – save
-; {ALT}+3 / Tasks – save
-; {ALT}+5 / Gmail – send
-; {ALT}+s / Raindrop.io
-; {ALT}+o / 1password
-; {ALT}+z / ColorZilla
-; {ALT}+i / IP Address and Domain Information
-; {ALT}+c / SSL Checker
-; {ALT}+w / Wappalyzer
+; {ALT}+{o} → 1password
+; {ALT}+{s} → Raindrop.io – save
+; {ALT}+{b} → Raindrop.io – open sidebar
+; {ALT}+{i} → IP Address and Domain Information
+; {ALT}+{w} → Wappalyzer
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; GOOGLE CHROME OMNIBOX / search shortcuts
+; Google Chrome Omnibox → search shortcuts
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; iu / i2 úkoly
-; io / i2 úkoly opakované
-; is / i2 služby
-; rd / Raindrop.io 
-; trn / Translate
-; ytb / Youtube
-; ytm / YT Music
-; bng / Bing
-; ddg / DuckDuckGo
-; szn / Seznam.cz
-; @gemini
+; bng → Bing
+; ddg → DuckDuckGo
+; szn → Seznam.cz
+; rd → Raindrop.io 
+; trn → Translate
+; ytb → Youtube
+; ytm → Youtube Music
+; jr → JIRA
+; @gemini → Gemini
+; iu → i2 – úkoly
+; io → i2 – úkoly opakované
+; is → i2 – služby
 ;
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; SHORTKEYS.APP / Google Chrome extension
+; Shortkeys.app → Google Chrome extension
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; +/1 / Raindrop.io
-; ě/2 / JIRA
-; š/3 / Tasks
-; č/4 / Calendar
-; ř/5 / Gmail
-; ž/6 / Messages
-; ý/7 / YT Music
-; á/8 / Translate
-; í/9 / Gemini
-; é/0 / Feedly
-; =/% / Blog drafts
-; y / Windy
+; {z} → chrome://bookmarks
+; {q} → closetab
+; {r} → hardreload
+; {n} → forward
+; {b} → back
+; {w} → blog – login
+; {b} → blog – drafts
+; {y} → Windy
+; {u} → i2 – úkoly
+; {x} → i2 – úkoly opakované
+; {m} → i2 – úkoly M.
+; {t} → i2 – úkoly na kontakt Síbek
+; {v} → i2 – úkoly komplet
+; {k} → i2 – kalendář
+; {p} → i2 – ekonomika práce
+; {f} → i2 – zakázky k fakturaci
 ;
-; u / úkoly
-; x / úkoly opakované
-; m / úkoly M.
-; t / úkoly na kontakt Síbek
-; v / úkoly komplet
-; k / kalendář
-; p / ekonomika práce
-; f / zakázky k fakturaci
-; s / služby
 ;
-; q / closetab
-; r / hardreload
-; n / forward
-; b / back
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; PowerToys → Windows utilities
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; {ALT}+{SPACE} → PowerToys Run
+; {WIN}+{SPACE} → PowerToys Command Palette
+; {CTRL}+{ALT}+{z} → Color Picker
+;
+;
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; Windows → favourite systems shortcuts
+;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+; {WIN}+{t} → show the taskbar
+; {WIN}+{d} → show the desktop
+; {WIN}+{,} → temporarily show the desktop
+;
+;
+;      __...--~~~~~-._   _.-~~~~~--...__
+;    //               `V'               \\ 
+;   //                 |                 \\ 
+;  //__...--~~~~~~-._  |  _.-~~~~~~--...__\\ 
+; //__.....----~~~~._\ | /_.~~~~----.....__\\
+;====================\\|//====================
+;                    `---`
+;
+; end of UsesThis.ahk

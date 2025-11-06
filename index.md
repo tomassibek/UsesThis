@@ -8,11 +8,11 @@ layout: default
 ___
 
 ## Tady AutoHotkey
-Open-source program pro OS Windows, který umožňuje automatizovat úkoly a vytvářet vlastní klávesové zkratky pomocí jednoduchých skriptů.
+Open-source program pro OS Windows, který umožňuje automatizovat úkoly a vytvářet vlastní klávesové zkratky pomocí jednoduchých scriptů.
 
 ___
 
-## Tady zdroje
+## Tady zdroje k AutoHotkey
 * Tutorial: [Tutorial](https://www.autohotkey.com/docs/v2/Tutorial.htm)
 * Wikipedia: [AutoHotkey](https://en.wikipedia.org/wiki/AutoHotkey)
 * wikiHow: [How to Use AutoHotkey](https://www.wikihow.com/Use-AutoHotkey)
