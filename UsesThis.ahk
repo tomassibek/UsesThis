@@ -62,7 +62,7 @@
 }
 ; {WIN}+{e} → Microsoft Edge
 #e::{
-    Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",, "Max"
+    Run 'C:\Users\' . A_UserName . '\AppData\Local\imput\Helium\Application\chrome.exe --profile-directory="Profile 2"',, "Max"
 }
 ; {WIN}+{o} → 1Password
 #o::{
@@ -77,65 +77,65 @@
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; HOTKEYS II. → Chrome apps
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {ALT}+{Num1} → Calendar
+; {ALT}+{Num1} → Gmail
 !Numpad1::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://calendar.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://mail.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num2} → Raindrop.io
+; {ALT}+{Num2} → Calendar
 !Numpad2::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://app.raindrop.io/my/62872361",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://calendar.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num3} → Tasks
+; {ALT}+{Num3} → Keep
 !Numpad3::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://tasks.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://keep.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num4} → Gmail
+; {ALT}+{Num4} → Tasks
 !Numpad4::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://mail.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://tasks.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num5} → Messages
+; {ALT}+{Num5} → Contacts
 !Numpad5::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://messages.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://contacts.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num6} → Contacts
+; {ALT}+{Num6} → Gemini
 !Numpad6::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://contacts.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://gemini.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num7} → Gemini
+; {ALT}+{Num7} → Drive
 !Numpad7::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://gemini.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://drive.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
 ; {ALT}+{Num8} → YouTube Music
 !Numpad8::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://music.youtube.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
 ; {ALT}+{Num9} → YouTube
 !Numpad9::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome_proxy.exe --app=https://www.youtube.com/watch?v=&list=PLL05By-aZ5NlV26rNra_Fzbo6w1b1zpdK",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://www.youtube.com/watch?v=&list=PLL05By-aZ5NlV26rNra_Fzbo6w1b1zpdK",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
@@ -149,7 +149,16 @@
         }
     Return
 }
-;
+; {CTRL}+{SHIFT}+{t} → open new tab ago to omnibox
+^+t::{
+    Send "^t"
+    Sleep "900"
+    Send "{F6}"
+    Sleep "900"
+    Send "{Delete}"
+    Return
+}
+
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; HOTKEYS III. → system settings
@@ -286,6 +295,7 @@ Return
 ::spk::→
 ::mzr::&nbsp;
 ::mlt::tomas.sibek@gmail.com
+::mlk::tomas.sibek@kinet.cz
 ::tms::tomas.sibek
 ::ckb::7214480072/0100
 ::icox::73744689
@@ -308,8 +318,10 @@ Return
 ;  Google Chrome extensions → shortcuts
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {ALT}+{o} → 1password
-; {ALT}+{s} → Raindrop.io – save
-; {ALT}+{b} → Raindrop.io – open sidebar
+; {ALT}+{s} → Google Tasks – save
+; {ALT}+{b} → Google Tasks in sidebar
+; {ALT}+{l} → Bookmarks in sidebar
+; {ALT}+{z} → Raindrop.io in sidebar
 ; {ALT}+{i} → IP Address and Domain Information
 ; {ALT}+{w} → Wappalyzer
 ;
@@ -339,8 +351,7 @@ Return
 ; {r} → hardreload
 ; {n} → forward
 ; {b} → back
-; {w} → blog – login
-; {b} → blog – drafts
+; {w} → blog – drafts
 ; {y} → Windy
 ; {u} → i2 – úkoly
 ; {x} → i2 – úkoly opakované
@@ -357,6 +368,7 @@ Return
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {ALT}+{SPACE} → PowerToys Run
 ; {WIN}+{SPACE} → PowerToys Command Palette
+; {CTRL}+{SPACE} → PowerToys web search
 ; {CTRL}+{ALT}+{z} → Color Picker
 ;
 ;
