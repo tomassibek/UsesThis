@@ -28,49 +28,49 @@
 #;::{
     Run "C:\Users\" . A_UserName . "\Downloads\",, "Max"
 }
-; {WIN}+{+} → Chrome
+; {WIN}+{+|1} → Chrome
 #+::{
     Run "C:\Program Files\Google\Chrome\Application\chrome.exe",, "Max"
 }
-; {WIN}+{ě} → Total Commander
+; {WIN}+{ě|2} → Total Commander
 #ě::{
     Run "C:\Program Files\totalcmd\TOTALCMD64.EXE",, "Max"
 }
-; {WIN}+{š} → VS Code
+; {WIN}+{š|3} → VS Code
 #š::{
     Run "C:\Users\" . A_UserName . "\AppData\Local\Programs\Microsoft VS Code\Code.exe",, "Max"
 }
-; {WIN}+{č} → Word
+; {WIN}+{č|4} → Word
 #č::{
     Run "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE",, "Max"
 }
-; {WIN}+{ř} → Excel
+; {WIN}+{ř|5} → Excel
 #ř::{
     Run "C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE",, "Max"
 }
-; {WIN}+{ž} → PDF-XChange Editor
+; {WIN}+{ž|6} → PDF-XChange Editor
 #ž::{
     Run "C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe",, "Max"
 }
-; {WIN}+{ý} → IrfanView
+; {WIN}+{ý|7} → IrfanView
 #ý::{
     Run "C:\Program Files\IrfanView\i_view64.exe",, "Max"
 }
-; {WIN}+{á} → GIMP
+; {WIN}+{á|8} → GIMP
 #á::{
     Run "C:\Users\" . A_UserName . "\AppData\Local\Programs\GIMP 2\bin\gimp-2.10.exe",, "Max"
 }
-; {WIN}+{e} → Microsoft Edge
+; {WIN}+{e} → Helium
 #e::{
-    Run 'C:\Users\' . A_UserName . '\AppData\Local\imput\Helium\Application\chrome.exe --profile-directory="Profile 2"',, "Max"
+    Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",, "Max"
 }
-; {WIN}+{o} → 1Password
+; {WIN}+{o} → Bitwarden
 #o::{
-    Run "C:\Users\" . A_UserName . "\AppData\Local\1Password\app\8\1Password.exe",, "Max"
+    Run "C:\Program Files\Bitwarden\Bitwarden.exe",, "Max"
 }
 ; {WIN}+{w} → WhatsApp
 #w::{
-    Run "C:\Users\" . A_UserName . "\Desktop\WhatsApp",, "Max"
+    Run "C:\Users\" . A_UserName . "\AppData\Local\Programs\BeeperTexts\Beeper.exe",, "Max"
 }
 ;
 ;
@@ -105,37 +105,37 @@
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num5} → Contacts
+; {ALT}+{Num5} → Raindrop.io
 !Numpad5::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://contacts.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://app.raindrop.io",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num6} → Gemini
+; {ALT}+{Num6} → Feedly
 !Numpad6::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://gemini.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://feedly.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
-; {ALT}+{Num7} → Drive
+; {ALT}+{Num7} → Gemini
 !Numpad7::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://drive.google.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://gemini.google.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
 ; {ALT}+{Num8} → YouTube Music
 !Numpad8::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://music.youtube.com/listen_again",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
 }
 ; {ALT}+{Num9} → YouTube
 !Numpad9::{
-    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://www.youtube.com/watch?v=&list=PLL05By-aZ5NlV26rNra_Fzbo6w1b1zpdK",, "Max"
+    Run "C:\Program Files\Google\Chrome\Application\chrome.exe --app=https://www.youtube.com",, "Max"
     sleep "1000"
     WinMaximize "A"
     Return
@@ -287,13 +287,15 @@ Return
 ; HOTSTRING I. → punctuation etc.
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ::lrpsn::Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-::,,::bflmpsvz
 ::uvz::„“ 
 ::pml::–
 ::ppx::|
 ::ppv::…
 ::spk::→
-::mzr::&nbsp;
+::tdl::- [ ]
+::mzh::&nbsp;
+::mzr:: 
+::iss::is:starred
 ::mlt::tomas.sibek@gmail.com
 ::mlk::tomas.sibek@kinet.cz
 ::tms::tomas.sibek
@@ -317,10 +319,11 @@ Return
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ;  Google Chrome extensions → shortcuts
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-; {ALT}+{o} → 1password
-; {ALT}+{s} → Google Tasks – save
-; {ALT}+{b} → Google Tasks in sidebar
-; {ALT}+{l} → Bookmarks in sidebar
+; {ALT}+{o} → Bitwarden
+; {ALT}+{f} → Feedly – save
+; {ALT}+{s} → Raindrop.io – save
+; {ALT}+{l} → Google Tasks in sidebar
+; {ALT}+{b} → Bookmarks in sidebar
 ; {ALT}+{z} → Raindrop.io in sidebar
 ; {ALT}+{i} → IP Address and Domain Information
 ; {ALT}+{w} → Wappalyzer
@@ -357,7 +360,6 @@ Return
 ; {x} → i2 – úkoly opakované
 ; {m} → i2 – úkoly M.
 ; {t} → i2 – úkoly na kontakt Síbek
-; {v} → i2 – úkoly komplet
 ; {k} → i2 – kalendář
 ; {p} → i2 – ekonomika práce
 ; {f} → i2 – zakázky k fakturaci
@@ -367,10 +369,12 @@ Return
 ; PowerToys → Windows utilities
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; {ALT}+{SPACE} → PowerToys Run
-; {WIN}+{SPACE} → PowerToys Command Palette
-; {CTRL}+{SPACE} → PowerToys web search
 ; {CTRL}+{ALT}+{z} → Color Picker
-;
+; {WIN}+{ALT}+{SPACE} → PowerToys Command Palette
+; {WIN}+{ALT}+{r} → PowerToys Command Palette – Raindrop.io
+; {WIN}+{ALT}+{s} → PowerToys Command Palette – web search
+; {WIN}+{ALT}+{h} → PowerToys Command Palette – Bittwareden
+
 ;
 ;––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 ; Windows → favourite systems shortcuts

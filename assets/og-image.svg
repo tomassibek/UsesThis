@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f9f9f9"/>
+  <rect x="62" y="54" width="1076" height="522" rx="38" fill="#ffffff" stroke="#e8e8e5" stroke-width="2"/>
+  <circle cx="151" cy="147" r="48" fill="none" stroke="#28303d" stroke-width="10"/>
+  <path d="M140 127l-22 20 22 20M162 127l22 20-22 20M159 118l-16 58" fill="none" stroke="#28303d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="223" y="156" fill="#28303d" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">UsesThis.ahk</text>
+  <text x="104" y="294" fill="#28303d" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">Osobní AutoHotkey skript</text>
+  <text x="104" y="356" fill="#636363" font-family="Arial, Helvetica, sans-serif" font-size="30">Klávesové zkratky a automatizace Windows</text>
+  <rect x="104" y="431" width="626" height="92" rx="22" fill="#1b1e23"/>
+  <circle cx="142" cy="466" r="7" fill="#d8613c"/>
+  <circle cx="168" cy="466" r="7" fill="#c2a990"/>
+  <circle cx="194" cy="466" r="7" fill="#b1c5a4"/>
+  <text x="136" y="503" fill="#b9f35b" font-family="Consolas, monospace" font-size="23">#Requires AutoHotkey v2.0</text>
+  <text x="885" y="502" fill="#28303d" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">ahk.sibek.cz</text>
+</svg>
